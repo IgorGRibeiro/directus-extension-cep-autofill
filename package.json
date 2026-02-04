@@ -1,0 +1,57 @@
+{
+  "name": "directus-extension-cep-autofill",
+  "description": "Auto-populate address fields using Brazilian postal codes via ViaCEP",
+  "version": "1.0.0",
+  "license": "MIT",
+  "author": "Igor Ribeiro",
+  "icon": "place",
+  "keywords": [
+    "directus",
+    "directus-extension",
+    "directus-extension-bundle",
+    "cep",
+    "brazil",
+    "postal-code",
+    "address-autofill",
+    "viacep"
+  ],
+  "type": "module",
+  "files": [
+    "dist"
+  ],
+  "directus:extension": {
+    "type": "bundle",
+    "path": {
+      "app": "dist/app.js",
+      "api": "dist/api.js"
+    },
+    "entries": [
+      {
+        "type": "interface",
+        "name": "cep-autofill",
+        "source": "src/interface/index.js"
+      },
+      {
+        "type": "display",
+        "name": "cep-display",
+        "source": "src/display/index.js"
+      },
+      {
+        "type": "hook",
+        "name": "cep-validation",
+        "source": "src/hook/index.js"
+      }
+    ],
+    "host": "^10.10.0"
+  },
+  "scripts": {
+    "build": "directus-extension build",
+    "dev": "directus-extension build -w --no-minify",
+    "link": "directus-extension link",
+    "validate": "directus-extension validate"
+  },
+  "devDependencies": {
+    "@directus/extensions-sdk": "17.0.5",
+    "vue": "^3.5.27"
+  }
+}
