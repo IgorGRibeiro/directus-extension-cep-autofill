@@ -25,7 +25,7 @@ Automatically populate address fields in Directus using Brazilian postal codes (
 ### Via npm
 
 ```bash
-npm install directus-extension-cep-autofill
+npm install @ribertec/directus-extension-cep-autofill
 ```
 
 Then restart your Directus instance.

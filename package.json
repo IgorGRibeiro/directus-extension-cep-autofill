@@ -1,10 +1,10 @@
 {
   "name": "@ribertec/directus-extension-cep-autofill",
   "description": "Auto-populate address fields using Brazilian postal codes via ViaCEP",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "license": "MIT",
-  "author": "Igor Ribeiro",
-  "icon": "place",
+  "author": "@ribertec",
+  "icon": "person_pin_circle",
   "keywords": [
     "directus",
     "directus-extension",
@@ -54,7 +54,6 @@
     "@directus/extensions-sdk": "17.0.5",
     "vue": "^3.5.27"
   },
-  "main": "index.js",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/IgorGRibeiro/directus-extension-cep-autofill.git"
